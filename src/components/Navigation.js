@@ -22,7 +22,7 @@ const Navigation = () => {
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path} exact>
+              <NavLink to={link.path}>
                 {link.text}
               </NavLink>
             </li>
