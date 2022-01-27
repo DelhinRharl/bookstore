@@ -1,21 +1,22 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/Books';
+import { removeRemote } from '../../redux/Books';
 
 const BookItem = (book) => {
   const {
-    id, title, author,
+    item_id, title, category,
   } = book;
   const dispatch = useDispatch();
   const removeBookFromStore = () => {
-    dispatch(removeBook(id));
+    dispatch(removeRemote(item_id));
   };
   return (
     <div>
       <span>
         {title}
       </span>
-      {author}
+      {category}
       <button type="button" onClick={removeBookFromStore}>Remove</button>
     </div>
   );

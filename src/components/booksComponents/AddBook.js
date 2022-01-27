@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../../redux/Books';
+import { useDispatch } from 'react-redux';
+import { addRemote } from '../../redux/Books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
+
   const submitStore = (e) => {
     e.preventDefault();
-    if (!title || !author) { return; }
+    if (!title || !category) return;
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
-      author,
+      category,
     };
 
-    dispatch(addBook(newBook));
+    dispatch(addRemote(newBook));
     setTitle('');
-    setAuthor('');
+    setCategory('');
   };
 
   return (
@@ -36,9 +37,9 @@ const AddBook = () => {
         className="author"
         required
         type="text"
-        placeholder="Author"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
+        placeholder="Category"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
       />
       <button className="addbtn" type="submit" onClick={submitStore}>Add Book</button>
     </form>
