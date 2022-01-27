@@ -38,7 +38,7 @@ export const addRemote = (payload) => async (dispatch) => {
 export const fetchRemote = () => async (dispatch) => {
   const books = await fetch(url);
   const data = await books.json();
-  const mapBooks = Object.entries(data).map(([item_id, book]) => {
+  const displayBooks = Object.entries(data).map(([item_id, book]) => {
     const { category, title } = book[0];
     return {
       item_id,
@@ -46,7 +46,7 @@ export const fetchRemote = () => async (dispatch) => {
       title,
     };
   });
-  dispatch(fetchBook(mapBooks));
+  dispatch(fetchBook(displayBooks));
 };
 
 export const removeRemote = (item_id) => async (dispatch) => {
