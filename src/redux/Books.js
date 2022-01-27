@@ -23,7 +23,7 @@ const fetchBook = (payload) => ({
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/1ACApRNEuGr2czHzTboo/books';
 
 export const addRemote = (payload) => async (dispatch) => {
-  const books = await fetch(url, {
+  await fetch(url, {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -31,7 +31,7 @@ export const addRemote = (payload) => async (dispatch) => {
     },
     body: JSON.stringify(payload),
   });
-  console.log(books);
+
   dispatch(addBook(payload));
 };
 
@@ -50,10 +50,10 @@ export const fetchRemote = () => async (dispatch) => {
 };
 
 export const removeRemote = (item_id) => async (dispatch) => {
-  const books = await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/1ACApRNEuGr2czHzTboo/books/${item_id}`, {
+  await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/1ACApRNEuGr2czHzTboo/books/${item_id}`, {
     method: 'DELETE',
   });
-  console.log(books, item_id);
+
   dispatch(removeBook(item_id));
 };
 
