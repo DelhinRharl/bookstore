@@ -194,13 +194,14 @@ form {
   font-size: 2rem;
 }
 
-.user-circle{
+.user-circle {
   color: #0290ff;
   position: relative;
   right: 10rem;
   margin-top: 2rem;
   font-size: 2rem;
 }
+
 .completed {
   width: 5rem;
   height: 1.125rem;

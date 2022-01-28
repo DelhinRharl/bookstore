@@ -30,8 +30,8 @@ const Navigation = () => {
           ))}
         </ul>
       </nav>
-      <div className='user-circle'>
-        <FaUserCircle/>
+      <div className="user-circle">
+        <FaUserCircle />
       </div>
     </header>
   );
