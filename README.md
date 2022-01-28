@@ -14,7 +14,7 @@ This is the third weekly project in the react Module. The project involves a sim
 
 ## Live Demo
 
-[soon]()
+[Live Version](https://bookstore-affaxed.herokuapp.com/)
 
 
 
