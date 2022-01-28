@@ -63,8 +63,8 @@ li {
   background-color: #fff;
 }
 
-.navlink{
-   text-decoration: none;
+.navlink {
+  text-decoration: none;
   color: #121212;
   font-family: 'Montserrat', sans-serif;
 }
@@ -204,16 +204,15 @@ li {
 
 .user-circle {
   color: #0290ff;
-  position: relative;
   right: 10rem;
   margin-top: 2rem;
   font-size: 2rem;
   position: absolute;
   border-radius: 2rem;
   background-color: #e8e8e8;
-  height: 2rem; 
+  height: 2rem;
   cursor: pointer;
-  padding: .3125rem;
+  padding: 0.3125rem;
 }
 
 .completed {

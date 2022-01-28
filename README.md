@@ -2,7 +2,7 @@
 
 This is the third weekly project in the react Module. The project involves a simple Bookstore that adds and removes books from an  external API
 
-![screenshot(scn.png)]
+![screenshot(./image/scn.png)]
 
 ## Built With
 

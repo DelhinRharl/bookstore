@@ -23,7 +23,7 @@ const Navigation = () => {
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}className="navlink">
+              <NavLink to={link.path} className="navlink">
                 {link.text}
               </NavLink>
             </li>
