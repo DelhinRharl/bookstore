@@ -2,7 +2,7 @@
 
 This is the third weekly project in the react Module. The project involves a simple Bookstore that adds and removes books from an  external API
 
-![screenshot(./images/scn.png)]
+![screenshot(scn.png)]
 
 ## Built With
 
@@ -30,7 +30,7 @@ In your terminal, navigate to your current directory and run this code
 
 Locate the directory in your file explorer
 
-`cd math-magician`
+`cd bookstore`
 
 Install npm or if installed already using this link
 

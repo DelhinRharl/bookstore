@@ -1,18 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaUserCircle } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 
 const Navigation = () => {
   const links = [
     {
       id: 1,
       path: '/',
-      text: 'Books',
+      text: 'BOOKS',
     },
     {
       id: 2,
       path: '/Categories',
-      text: 'Categories',
+      text: 'CATEGORIES',
     },
   ];
 
@@ -23,7 +23,7 @@ const Navigation = () => {
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>
+              <NavLink to={link.path}className="navlink">
                 {link.text}
               </NavLink>
             </li>
@@ -31,7 +31,7 @@ const Navigation = () => {
         </ul>
       </nav>
       <div className="user-circle">
-        <FaUserCircle />
+        <FaUser />
       </div>
     </header>
   );
