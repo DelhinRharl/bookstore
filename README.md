@@ -1,8 +1,8 @@
-# Math Magicians
+# Bookstore
 
-This is the first week;y project in the react Module. The project involves a simple yet powerful calculator that can do the basic math logic
+This is the third weekly project in the react Module. The project involves a simple Bookstore that adds and removes books from an  external API
 
-![screenshot]
+![screenshot(/images/scn)]
 
 ## Built With
 
@@ -10,10 +10,11 @@ This is the first week;y project in the react Module. The project involves a sim
 - CSS
 - Javascript
 - React
+- Redux
 
 ## Live Demo
 
-[Live Demo Link](https://gallant-babbage-8243b5.netlify.app/)
+[soon]()
 
 
 

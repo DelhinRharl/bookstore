@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
 
 const Navigation = () => {
   const links = [
@@ -16,7 +17,7 @@ const Navigation = () => {
   ];
 
   return (
-    <header>
+    <header className="header">
       <nav>
         <h2>Bookstore CMS</h2>
         <ul>
@@ -29,6 +30,9 @@ const Navigation = () => {
           ))}
         </ul>
       </nav>
+      <div className='user-circle'>
+        <FaUserCircle/>
+      </div>
     </header>
   );
 };
