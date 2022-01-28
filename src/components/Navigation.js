@@ -19,7 +19,7 @@ const Navigation = () => {
   return (
     <header className="header">
       <nav>
-        <h2>Bookstore CMS</h2>
+        <h1>Bookstore CMS</h1>
         <ul>
           {links.map((link) => (
             <li key={link.id}>
