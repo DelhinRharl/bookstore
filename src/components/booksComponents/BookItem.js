@@ -31,12 +31,9 @@ const BookItem = (book) => {
       <div className="ring">
         <CircularProgressbar
           value={percentage}
-  // text={`${percentage}%`}
           styles={buildStyles({
-            // Rotation of path and trail, in number of turns (0-1)
             rotation: 0.25,
             strokeLinecap: 'butt',
-            textSize: '16px',
             pathTransitionDuration: 0.5,
             pathColor: `rgba(2, 144, 255, ${percentage / 80})`,
             textColor: '#f88',
@@ -46,7 +43,10 @@ const BookItem = (book) => {
           className="progress"
         />
         <div className="percentage">
-          <p className="perc">{ `${Math.floor(Math.random() * 80)}%`}</p>
+          <p className="perc">
+            {percentage}
+            %
+          </p>
           <p className="completed">Completed</p>
         </div>
       </div>
