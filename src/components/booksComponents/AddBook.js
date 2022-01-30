@@ -34,7 +34,7 @@ const AddBook = () => {
       />
 
       <input
-        className="author"
+        className="cate"
         required
         type="text"
         placeholder="Category"

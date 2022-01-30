@@ -1,3 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto Slab'");
+
 body {
+  background-color: #f5f6fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 100%;
+  height: 5.938rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
+}
+
+nav h1 {
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  gap: 5rem;
+  font-size: 0.813rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.name {
+  width: 50%;
+  height: 2rem;
+  border-radius: 4px;
+  border: solid white;
+  background-color: #fff;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.add {
+  width: 85%;
+  height: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-left: 2.5rem;
+}
+
+.addbtn {
+  width: 10rem;
+  height: 2.813rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: transparent;
+  color: #fff;
+}
+
+.cate {
+  width: 20%;
+  height: 2rem;
+  border-radius: 4px;
+  border: solid white;
+  background-color: #fff;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-color: #f5f3f3;
+  border-style: solid;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  height: 20vh;
+  width: 85%;
+  margin-left: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  padding: 1rem;
+}
+
+.remove-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.progress {
+  height: 70px;
+  width: 70px;
+  color: #ebebeb;
+}
+
+.ring {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.title {
+  width: max-content;
+  height: 1.813rem;
+  font-family: 'RobotoSlab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+}
+
+.category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.remove {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.edit {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.percentage {
+  margin-left: 2rem;
+}
+
+.comment {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.perc {
+  width: 4.25rem;
+  height: 1.438rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.user-circle {
+  color: #0290ff;
+  right: 10rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  position: absolute;
+  border: solid rgb(200, 200, 200) 0.0313rem;
+  border-radius: 2rem;
+  background-color: #f3f3f3;
+  height: 2rem;
+  cursor: pointer;
+  padding: 0.3125rem;
+}
+
+.completed {
+  width: 5rem;
+  height: 1.125rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: normal;
+}
+
+.current {
+  width: 100%;
+  height: 1.125rem;
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.c-chapter {
+  width: 100%;
+  height: 1.313rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+}
+
+.update {
+  width: 100%;
+  height: 2.125rem;
+  font-family: 'RobotoSlab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background-color: #0290ff;
+  border: transparent;
+  border-radius: 0.125rem;
+  cursor: pointer;
 }

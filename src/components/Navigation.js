@@ -1,34 +1,38 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 
 const Navigation = () => {
   const links = [
     {
       id: 1,
       path: '/',
-      text: 'Books',
+      text: 'BOOKS',
     },
     {
       id: 2,
       path: '/Categories',
-      text: 'Categories',
+      text: 'CATEGORIES',
     },
   ];
 
   return (
-    <header>
+    <header className="header">
       <nav>
-        <h2>Bookstore CMS</h2>
+        <h1>Bookstore CMS</h1>
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>
+              <NavLink to={link.path} className="navlink">
                 {link.text}
               </NavLink>
             </li>
           ))}
         </ul>
       </nav>
+      <div className="user-circle">
+        <FaUser />
+      </div>
     </header>
   );
 };

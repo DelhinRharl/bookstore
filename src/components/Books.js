@@ -5,7 +5,7 @@ import BookList from './booksComponents/BookList';
 const Books = () => (
   <main>
     <BookList />
-    <h2>ADD NEW BOOK</h2>
+    <h2 className="add">ADD NEW BOOK</h2>
     <AddBook />
   </main>
 );
